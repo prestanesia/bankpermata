@@ -35,8 +35,8 @@ $_MODULE['<{bankpermata}prestashop>payment_execution_0b0d1bab2a2656dff0e51f98f50
 $_MODULE['<{bankpermata}prestashop>payment_execution_edd87c9059d88fea45c0bd6384ce92b9'] = 'Konfirmasi pembelian Anda dengan klik pada tombol \"Konfirmasi pembelian\".';
 $_MODULE['<{bankpermata}prestashop>payment_execution_46b9e3665f187c739c55983f757ccda0'] = 'Konfirmasi pembelian';
 $_MODULE['<{bankpermata}prestashop>payment_execution_569fd05bdafa1712c4f6be5b153b8418'] = 'Cara pembayaran lainnya';
-$_MODULE['<{bankpermata}prestashop>infos_f05eff2e8ef74bd5b97af29bb8484ad0'] = 'Modul untuk menerima penbayaran melalui Bank Permata.';
-$_MODULE['<{bankpermata}prestashop>infos_782854c7ae9b447d868633c671c6cfc7'] = 'Jika pelanggan memilih membayar menggunakan Bank Muamalat, status pembelian akan berubah menjadi \'Menunggu pembayaran via Bank Permata\'';
+$_MODULE['<{bankpermata}prestashop>infos_f05eff2e8ef74bd5b97af29bb8484ad0'] = 'Modul untuk menerima pembayaran melalui Bank Permata.';
+$_MODULE['<{bankpermata}prestashop>infos_782854c7ae9b447d868633c671c6cfc7'] = 'Jika pelanggan memilih membayar menggunakan Bank Permata, status pembelian akan berubah menjadi \'Menunggu pembayaran via Bank Permata\'';
 $_MODULE['<{bankpermata}prestashop>infos_aaed0ca891302e46bb42a2f28244229e'] = 'Dan jika pembayaran telah diterima, konfirmasi pembayaran harus dilakukan secara manual.';
 $_MODULE['<{bankpermata}prestashop>payment_0a4ca38d379b40f5d8ca0782f7c0077b'] = 'Bayar melalui Bank Permata';
 $_MODULE['<{bankpermata}prestashop>payment_return_88526efe38fd18179a127024aba8c1d7'] = 'Pembelian Anda %s berhasil.';
