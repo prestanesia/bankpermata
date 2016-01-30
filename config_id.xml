@@ -2,8 +2,8 @@
 <module>
 	<name>bankpermata</name>
 	<displayName><![CDATA[Bank Permata]]></displayName>
-	<version><![CDATA[1.0]]></version>
-	<description><![CDATA[Accept payments for your products via Bank Permata transfer.]]></description>
+	<version><![CDATA[1.1.1]]></version>
+	<description><![CDATA[Menerima pembayaran melalui Bank Permata]]></description>
 	<author><![CDATA[Prestanesia]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
 	<confirmUninstall><![CDATA[Yakin akan menghapus seting modul?]]></confirmUninstall>
