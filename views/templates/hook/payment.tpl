@@ -23,9 +23,9 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<p class="payment_module_permata">
-	<a class="bankpermata" href="{$link->getModuleLink('bankpermata', 'payment')|escape:'html'}" title="{l s='Pay by Bank Permata' mod='bankpermata'}">
-		<img src="{$this_path_bw}bankwire.jpg" alt="{l s='Pay by Bank Permata' mod='bankpermata'}" />
-		{l s='Pay by Bank Permata' mod='bankpermata'}
+<p class="payment_module">
+	<a href="{$link->getModuleLink('bankpermata', 'payment')|escape:'html'}" title="{l s='Pay by Bank Permata' d='Modules.BankPermata.Shop'}">
+		<img src="{$this_path_bw}logo.png" alt="{l s='Pay by Bank Permata' d='Modules.BankPermata.Shop'}"/>
+		{l s='Pay by Bank Permata' d='Modules.BankPermata.Shop'}&nbsp;<span>{l s='(order processing will be longer)' d='Modules.BankPermata.Shop'}</span>
 	</a>
 </p>

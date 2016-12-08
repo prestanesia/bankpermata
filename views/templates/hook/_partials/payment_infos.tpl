@@ -23,9 +23,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="alert alert-info">
-<img src="../modules/bankpermata/logo.png" style="float:left; margin-right:15px;" height="60">
-<p><strong>{l s="This module allows you to accept secure payments by Bank Permata." d='Modules.BankPermata.Admin'}</strong></p>
-<p>{l s="If the client chooses to pay by Bank Permata, the order's status will change to 'Awaiting Bank Permata Payment.'" d='Modules.BankPermata.Admin'}</p>
-<p>{l s="That said, you must manually confirm the order upon receiving the Bank Permata." d='Modules.BankPermata.Admin'}</p>
-</div>
+
+<dl>
+    <dt>{l s='Amount' mod='bankpermata'}</dt>
+    <dd>{$total}</dd>
+    <dt>{l s='Name of account owner' mod='bankpermata'}</dt>
+    <dd>{$bankpermataOwner}</dd>
+    <dt>{l s='Please include these details' mod='bankpermata'}</dt>
+    <dd>{$bankpermataDetails}</dd>
+    <dt>{l s='Bank name' mod='bankpermata'}</dt>
+    <dd>{$bankpermataAddress nofilter}</dd>
+</dl>

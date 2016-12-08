@@ -24,24 +24,22 @@
 *}
 
 {if $status == 'ok'}
-<p>{l s='Your order on %s is complete.' sprintf=$shop_name mod='bankpermata'}
-		<br /><br />
-		{l s='Please send us a bank wire with' mod='bankpermata'}
-		<br /><br />- {l s='Amount' mod='bankpermata'} <span class="price"><strong>{$total_to_pay}</strong></span>
-		<br /><br />- {l s='Name of account owner' mod='bankpermata'}  <strong>{if $bankpermataOwner}{$bankpermataOwner}{else}___________{/if}</strong>
-		<br /><br />- {l s='Include these details' mod='bankpermata'}  <strong>{if $bankpermataDetails}{$bankpermataDetails}{else}___________{/if}</strong>
-		<br /><br />- {l s='Bank name' mod='bankpermata'}  <strong>{if $bankpermataAddress}{$bankpermataAddress}{else}___________{/if}</strong>
-		{if !isset($reference)}
-			<br /><br />- {l s='Do not forget to insert your order number #%d in the subject of your bank wire.' sprintf=$id_order mod='bankpermata'}
-		{else}
-			<br /><br />- {l s='Do not forget to insert your order reference %s in the subject of your bank wire.' sprintf=$reference mod='bankpermata'}
-		{/if}		<br /><br />{l s='An email has been sent with this information.' mod='bankpermata'}
-		<br /><br /> <strong>{l s='Your order will be sent as soon as we receive payment.' mod='bankpermata'}</strong>
-		<br /><br />{l s='If you have questions, comments or concerns, please contact our' mod='bankpermata'} <a href="{$link->getPageLink('contact', true)|escape:'html'}">{l s='expert customer support team' mod='bankpermata'}</a>.
-	</p>
+    <p>
+      {l s='Your order on %s is complete.' sprintf=[$shop_name] mod='bankpermata'}<br/>
+      {l s='Please send us payment via Bank Permata with:' mod='bankpermata'}
+    </p>
+    {include file='module:bankpermata/views/templates/hook/_partials/payment_infos.tpl'}
+
+    <p>
+      {l s='Please specify your order reference %s in the bankwire description.' sprintf=[$reference] mod='bankpermata'}<br/>
+      {l s='We\'ve also sent you this information by e-mail.' mod='bankpermata'}
+    </p>
+    <strong>{l s='Your order will be sent as soon as we receive payment.' mod='bankpermata'}</strong>
+    <p>
+      {l s='If you have questions, comments or concerns, please contact our [1]expert customer support team[/1].' mod='bankpermata' tags=["<a href='{$contact_url}'>"]}
+    </p>
 {else}
-	<p class="warning">
-		{l s='We noticed a problem with your order. If you think this is an error, feel free to contact our' mod='bankpermata'} 
-		<a href="{$link->getPageLink('contact', true)|escape:'html'}">{l s='expert customer support team' mod='bankpermata'}</a>.
-	</p>
+    <p class="warning">
+      {l s='We noticed a problem with your order. If you think this is an error, feel free to contact our [1]expert customer support team[/1].' mod='bankpermata' tags=["<a href='{$contact_url}'>"]}
+    </p>
 {/if}
